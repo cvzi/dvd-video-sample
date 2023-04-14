@@ -1,0 +1,191 @@
+DVDStyler v3.2.1
+Windows 10 (build 19045), 64-bit edition
+FFmpeg: libavformat 58.76.100, libavcodec 58.134.100, libavutil 56.70.100
+Prepare
+Cleaning temporary directory
+Search for transcoded files in cache
+Found transcoded file in cache for 'pexels-daniel-torobekov-5743314-960x540-30fps.mkv'
+Found transcoded file in cache for 'pexels-daniel-torobekov-5743316-960x540-30fps.mkv'
+Found transcoded file in cache for 'pexels-daniel-torobekov-5743317-960x540-30fps.mp4'
+==============================================================================
+            | Input size | Output duration  | Bitrate  | Estimated output size
+VMGM menu 1 |            |                  | 8.0 Mb/s | 0.1 MB
+VMGM menu 2 |            |                  | 8.0 Mb/s | 0.1 MB
+Title 1
+  mkv       | 1.8 MB     | 0:09.024 sec     | 8.0 Mb/s | 9.0 MB
+Title 2
+  mkv       | 4.4 MB     | 0:20.522 sec     | 8.0 Mb/s | 20.5 MB
+Title 3
+  mp4       | 3.0 MB     | 0:15.530 sec     | 8.0 Mb/s | 15.5 MB
+Total       |            | 0:45.076 sec     |          | 45.3 MB
+=============================================================================
+Generating menu 1 of 2
+Create menu MPEG
+Frame count of menu: 15
+Multiplexing subpictures into mpeg
+Menu has 1 group(s) of changeable colours.
+Executing command: spumux -P -s 0 "menu0-0.mpg_spumux.xml"
+DVDAuthor::spumux, version 0.7.2.
+Build options: gnugetopt iconv freetype fribidi fontconfig
+Send bug reports to <dvdauthor-users@lists.sourceforge.net>
+INFO: no default video format, must explicitly specify NTSC or PAL
+INFO: PNG had 1 colors
+INFO: PNG had 4 colors
+INFO: PNG had 4 colors
+INFO: Pickbuttongroups, success with 1 groups, useimg=1
+INFO: 0 bytes of data written
+INFO: 8192 bytes of data written
+INFO: 14336 bytes of data written
+INFO: 22528 bytes of data written
+INFO: 28672 bytes of data written
+INFO: Found EOF in .sub file.
+INFO: Max_sub_size=94
+INFO: 36864 bytes of data written
+INFO: 1 subtitles added, 0 subtitles skipped, stream: 32, offset: 0.53
+Generating menu 2 of 2
+Create menu MPEG
+Frame count of menu: 15
+Multiplexing subpictures into mpeg
+Menu has 2 group(s) of changeable colours.
+Executing command: spumux -P -s 0 "menu0-1.mpg_spumux.xml"
+DVDAuthor::spumux, version 0.7.2.
+Build options: gnugetopt iconv freetype fribidi fontconfig
+Send bug reports to <dvdauthor-users@lists.sourceforge.net>
+INFO: no default video format, must explicitly specify NTSC or PAL
+INFO: PNG had 1 colors
+INFO: PNG had 4 colors
+INFO: PNG had 7 colors
+INFO: Pickbuttongroups, success with 2 groups, useimg=1
+INFO: 0 bytes of data written
+INFO: 8192 bytes of data written
+INFO: 16384 bytes of data written
+INFO: 24576 bytes of data written
+INFO: 32768 bytes of data written
+INFO: Found EOF in .sub file.
+INFO: Max_sub_size=2908
+INFO: 43008 bytes of data written
+INFO: 1 subtitles added, 0 subtitles skipped, stream: 32, offset: 0.53
+=========================
+            | Result size
+VMGM menu 1 | 0.0 MB
+VMGM menu 2 | 0.0 MB
+Title 1     | 9.0 MB
+Title 2     | 20.4 MB
+Title 3     | 15.4 MB
+Total       | 44.9 MB
+=========================
+Generating DVD
+Executing command: dvdauthor -o "dvd-out" -x "dvdauthor.xml"
+DVDAuthor::dvdauthor, version 0.7.2.
+Build options: gnugetopt iconv freetype fribidi fontconfig
+Send bug reports to <dvdauthor-users@lists.sourceforge.net>
+INFO: no default video format, must explicitly specify NTSC or PAL
+INFO: dvdauthor creating VTS
+STAT: Picking VTS 01
+STAT: Processing empty_ntsc_ac3.mpg...
+INFO: Video pts = 0.178 .. 6.417
+INFO: Audio[0] pts = 0.178 .. 6.194
+STAT: VOBU 11 at 0MB, 1 PGCs
+CHAPTERS: VTS[1/1] 0.000
+INFO: Generating VTSM with the following video attributes:
+INFO: MPEG version: mpeg2
+INFO: TV standard: ntsc
+INFO: Aspect ratio: 4:3
+INFO: Resolution: 720x480
+INFO: Audio ch 0 format: ac3/2ch,  48khz drc, 'en'
+STAT: Processing dvd-cache\entry001.vob...
+WARN: Audio pts for channel 0 moves backwards by 45 at inoffset 0x1e000; please remultiplex input.
+WARN: Previous sector: 0.534 - 0.630
+WARN: Current sector: 0.630 - 0.726
+WARN: Discontinuity of 30 in audio channel 0 at inoffset 0x4a800; please remultiplex input.
+WARN: Previous sector: 0.630 - 0.726
+WARN: Current sector: 0.726 - 0.790
+WARN: Audio pts for channel 0 moves backwards by 30 at inoffset 0x6f800; please remultiplex input.
+WARN: Previous sector: 0.790 - 0.886
+WARN: Current sector: 0.886 - 0.982
+WARN: Audio pts for channel 0 moves backwards by 30 at inoffset 0x87800; please remultiplex input.
+WARN: Previous sector: 0.886 - 0.982
+WARN: Previous sector: 1.205 - 1.301
+WARN: Current sector: 1.558 - 1.654
+WARN: Audio pts for channel 0 moves backwards by 30 at inoffset 0x185000; please remultiplex input.
+WARN: Previous sector: 2.229 - 2.325
+WARN: Current sector: 2.646 - 2.742
+WARN: Audio pts for channel 0 moves backwards by 30 at inoffset 0x288800; please remultiplex input.
+WARN: Previous sector: 3.318 - 3.414
+WARN: Current sector: 3.989 - 4.085
+WARN: Audio pts for channel 0 moves backwards by 30 at inoffset 0x407000; please remultiplex input.
+WARN: Previous sector: 4.406 - 4.502
+WARN: Previous sector: 8.182 - 8.278
+STAT: VOBU 16 at 8MB, 3 PGCs
+INFO: Video pts = 0.540 .. 9.620
+INFO: Audio[0] pts = 0.534 .. 9.557
+STAT: Processing dvd-cache\entry002.vob...
+WARN: Current sector: 2.806 - 2.902
+WARN: Audio pts for channel 0 moves backwards by 30 at inoffset 0x672000; please remultiplex input.
+STAT: VOBU 32 at 17MB, 3 PGCs
+WARN: Previous sector: 10.966 - 11.030
+WARN: Current sector: 15.158 - 15.254
+STAT: VOBU 48 at 27MB, 3 PGCs
+WARN: Discontinuity of 30 in audio channel 0 at inoffset 0x128e800; please remultiplex input.
+INFO: Video pts = 0.540 .. 21.140
+INFO: Audio[0] pts = 0.534 .. 21.077
+STAT: Processing dvd-cache\entry003.vob...
+STAT: VOBU 67 at 38MB, 3 PGCs
+INFO: Video pts = 0.540 .. 16.140
+INFO: Audio[0] pts = 0.534 .. 16.086
+STAT: VOBU 77 at 44MB, 3 PGCs
+CHAPTERS: VTS[1/1] 0.000
+CHAPTERS: VTS[2/1] 0.000
+CHAPTERS: VTS[3/1] 0.000
+INFO: Generating VTS with the following video attributes:
+INFO: MPEG version: mpeg2
+INFO: TV standard: pal
+INFO: Aspect ratio: 16:9
+INFO: Resolution: 720x576
+INFO: Audio ch 0 format: ac3/2ch,  48khz drc, 'en'
+STAT: fixed 11 VOBUs                         
+STAT: fixing VOBU at 8MB (17/77, 20%)
+STAT: fixing VOBU at 17MB (33/77, 41%)
+STAT: fixing VOBU at 27MB (49/77, 62%)
+STAT: fixing VOBU at 36MB (65/77, 83%)
+STAT: fixed 77 VOBUs                         
+INFO: dvdauthor creating table of contents
+INFO: Scanning dvd-out/VIDEO_TS/VTS_01_0.IFO
+INFO: Creating menu for TOC
+STAT: Processing dvd-tmp\menu0-0.mpg...
+WARN: Audio pts for channel 0 moves backwards by 10752 at inoffset 0x7000; please remultiplex input.
+WARN: Previous sector: 0.530 - 0.786
+WARN: Current sector: 0.667 - 0.923
+INFO: Video pts = 0.533 .. 1.000
+INFO: Audio[0] pts = 0.530 .. 0.923
+INFO: Audio[32] pts = 0.533 .. 0.533
+STAT: Processing dvd-tmp\menu0-1.mpg...
+WARN: Audio pts for channel 0 moves backwards by 10752 at inoffset 0x8000; please remultiplex input.
+WARN: Previous sector: 0.530 - 0.786
+WARN: Current sector: 0.667 - 0.923
+INFO: Video pts = 0.533 .. 1.000
+INFO: Audio[0] pts = 0.530 .. 0.923
+INFO: Audio[32] pts = 0.533 .. 0.533
+STAT: VOBU 2 at 0MB, 2 PGCs
+CHAPTERS: VTS[1/1] 0.000
+CHAPTERS: VTS[2/1] 0.000
+INFO: Generating VMGM with the following video attributes:
+INFO: MPEG version: mpeg2
+INFO: TV standard: ntsc
+INFO: Aspect ratio: 4:3
+INFO: Resolution: 720x480
+INFO: Audio ch 0 format: ac3/2ch,  48khz drc, 'en'
+STAT: fixed 2 VOBUs                         
+Creating ISO image
+Executing command: mkisofs -V "DVD" -o "dvd.iso" -dvd-video "dvd-out"
+ 21.24% done, estimate finish Fri Apr 14 22:04:21 2023
+ 42.49% done, estimate finish Fri Apr 14 22:04:21 2023
+ 63.67% done, estimate finish Fri Apr 14 22:04:21 2023
+ 84.91% done, estimate finish Fri Apr 14 22:04:21 2023
+Total translation table size: 0
+Total rockridge attributes bytes: 0
+Total directory bytes: 4248
+Path table size(bytes): 42
+23570 extents written (46 MB)
+Cleaning temporary directory
+Generating was successful.
